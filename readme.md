@@ -22,7 +22,8 @@ The clients refer to the browser on a user's device that sends a request to a se
 
 The server refers to a computer in a data center that store your code.
 
-![alt text](image.png)
+<img src="image.png" width="300" height="200">
+<!-- ![alt text](image.png) -->
 
 ---
 
