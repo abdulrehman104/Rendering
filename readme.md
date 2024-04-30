@@ -22,8 +22,7 @@ The clients refer to the browser on a user's device that sends a request to a se
 
 The server refers to a computer in a data center that store your code.
 
-<!-- ## <img src="image.png" width="400" height="200"> -->
-## <img src="image.png" >
+## <img src="image.png" width="600" height="300">
 
 ## 2. Request Response LifeCycle:
 
@@ -65,8 +64,7 @@ There are two types of rendering Client side renderng & Server side Rendering.
 
 Client side rendering refers to the process where our application is rendered on client side, meaning that the data is delevered from the server to client side in to HTML, then the page is show to the user.
 
-<!-- <img src="image-1.png" width="300" height="200"> -->
-<img src="image-1.png" >
+<img src="image-1.png" width="600" height="400">
 
 This image illustrates the process of loading a website in a browser:
 
@@ -104,8 +102,7 @@ Once all the necessary files (HTML, CSS, and JS) are downloaded, the browser sta
 
 Server-side rendering involves loading data on the server and rendering the entire application in the browser by generating HTML in response to requests made from the browser.
 
-<!-- <img src="image-2.png" width="300" height="200"> -->
-<img src="image-2.png" >
+<img src="image-2.png" width="600" height="400">
 
 ### Advantages of SSR
 
