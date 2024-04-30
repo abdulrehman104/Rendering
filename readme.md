@@ -22,10 +22,7 @@ The clients refer to the browser on a user's device that sends a request to a se
 
 The server refers to a computer in a data center that store your code.
 
-<img src="image.png" width="400" height="200">
-<!-- ![alt text](image.png) -->
-
----
+## <img src="image.png" width="400" height="200">
 
 ## 2. Request Response LifeCycle:
 
@@ -136,5 +133,90 @@ Server-side rendering allows for progressive enhancement by ensuring that the co
 Server-side rendering simplifies debugging and testing processes since rendering occurs on the server, making it easier to identify and fix issues related to page rendering and content delivery.
 
 ---
-# Hydration :
 
+## Types of Server Side Rendering :
+
+There are two types of server side rendering.
+
+### 1. Server Side Static Generation (SSG):
+
+Static Site Generation (SSG) is a technique where web pages are generated at build time as static HTML files. These HTML files represent the content of the website and can be served directly to clients. SSG is ideal for websites with content that doesn't change frequently, such as landing pages, blogs, or documentation sites.
+
+#### Advantages of SSG:
+
+• `Fast page load:`
+HTML page generated at build time, so when a user visits the static page, it can be quickly loaded.
+
+• `Better Seo:`
+Static pages include all necessary content, including meta tags, which is good for search engine optimization.
+
+• `Achieve High Ranking:`
+Helps in achieving higher ranking in search results.
+
+• `Easy to scale:`
+SSG website are easy to scale because they don`t required server side data fetching at run time. This make them suitable for website with high traffic.
+
+• `Improve Security:`
+SSG wesite are mostly static files, they have lower security risk compare to traditional website.
+
+#### DisAdvantages of SSG:
+
+• `Slow updates:` If a page needs to be updated, it has to be manually rebuilt. Change in dynamic data could result in slow updates.
+
+• `Not suitable for dynamic data:` Static generation is not suitable for websites with frequently changing data, such as e-commerce websites or
+real-time dashboards.
+
+### 2. Server side Dynamic Rendering (SSR):
+
+Dynamic rendering is the method of generating HTML pages dynamically on the server side in response to each request. This process occurs when a user makes a request to the server, triggering the generation of the HTML page on the server-side, which is then served to the user. Unlike static rendering, where HTML pages are pre-generated, dynamic rendering involves rendering both client and server components at the time of the request, without caching the result. This approach is beneficial for applications such as news websites, personalized e-commerce pages, and social media feeds, where real-time updates and dynamic content are essential.
+
+#### Advantages of Server-Side Dynamic Rendering:
+
+• `Real-Time Data Integration:` Server-side dynamic rendering allows for the integration of real-time data from databases, APIs, or external sources,ensuring that users receive the most up-to-date information.
+
+• `Flexible Content Management:` With server-side rendering, content management systems (CMS) can dynamically generate and serve customized content to
+users based on various criteria, providing flexibility in content 
+presentation.
+
+• `Improved SEO:` Server-side rendering ensures that search engine crawlers receive fully rendered HTML content, leading to better indexing and
+improved search engine optimization (SEO) performance compared to client-side rendering.
+
+#### Disadvantages of Server-Side Dynamic Rendering:
+
+• `Performance Overhead:` Server-side dynamic rendering may introduce performance overhead, especially for complex web applications, as it requires processing on the server before delivering fully rendered HTML to the client, potentially leading to slower page load times.
+
+• `Server Load:` Handling dynamic rendering on the server can increase server load, particularly during peak traffic periods, which may require additional server resources and infrastructure scaling to maintain performance and reliability.
+
+• `Caching Challenges:` Dynamic content generated on the server may be challenging to cache effectively, as it often varies based on user interactions or other dynamic factors, complicating caching strategies and potentially impacting overall performance optimization efforts.
+
+### Incremental Static Regeneration (ISR):
+
+Incremental Static Regeneration is a feature in Next.js that allows you to update static pages with new data without having to rebuild the entire site. It works by regenerating specific pages when new data is available, rather than regenerating the entire site. This approach improves efficiency and reduces the time it takes to update content, making it ideal for dynamic websites with frequently changing data.
+
+#### Advantages Of ISR:
+
+• `Improved Performance:` ISR allows you to serve static content initially while regenerating it in the background. This means your users get fast page loads while ensuring that your content stays up to date.
+
+• `Dynamic Content Updates:` With ISR, you can have dynamic content on your static site. The pages are regenerated periodically or upon request, ensuring that your content is always fresh without sacrificing performance.
+
+• `Reduced Load on Servers:` By serving static content whenever possible and regenerating it incrementally, ISR reduces the load on your servers. This is particularly beneficial for sites with high traffic volumes as it helps maintain performance and scalability.
+
+• `Better User Experience:` Users get a consistently fast experience, even when content changes frequently. They don't have to wait for pages to rebuild before accessing the latest information, which enhances overall user satisfaction.
+
+• `SEO Benefits:` Static content is easily crawlable by search engine bots, helping to improve SEO rankings. With ISR, you can have the best of both worlds: dynamic content for users and static content for search engines.
+
+• `Control Over Regeneration:` Next.js allows you to configure ISR based on your needs. You can specify how frequently pages should be regenerated and whether regeneration should be triggered by user requests or on a schedule.
+
+
+---
+
+# Comnponents :
+
+
+## Client Comnponents :
+
+## Server Comnponents :
+
+---
+
+# Hydration:
